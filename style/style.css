@@ -9,9 +9,10 @@ h2 {
   font-size: 25px;
   font-weight: bold;
 }
-p{
-    font-size: 16px;
-    color: gray;
+p {
+  display: none;
+  font-size: 16px;
+  color: gray;
 }
 
 .Container {
@@ -19,7 +20,7 @@ p{
   top: 50%;
   left: 43%;
   margin: -200px 0 0 -200px;
-  max-width: 600px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -31,10 +32,9 @@ p{
     0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
-.FAQ-textBox{
-    padding: 40px;
-    padding-top: 0px;
-    
+.FAQ-textBox {
+  padding: 40px;
+  padding-top: 0px;
 }
 .FAQ-tags {
   display: flex;
@@ -43,18 +43,17 @@ p{
   padding-top: 30px;
   padding-left: 33px;
   gap: 10px;
-  
 }
 .FAQ-txt {
-  
   padding: 20px 0px 20px 0px;
   border-bottom: 2px solid rgb(232, 232, 232);
-
- 
 }
 .FAQ-minplus {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 70px;
 }
-
+.button {
+  cursor: pointer;
+}
