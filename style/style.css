@@ -1,26 +1,38 @@
+html {
+  font-family: "WorkSans" !important;
+}
+
 body {
   background-color: hsl(275, 100%, 97%);
 }
-h1 {
-  font-size: 16px;
-  font-weight: bold;
-}
+
 h2 {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 40px;
+}
+.txt-item {
+  font-weight: 500;
 }
 p {
-  display: none;
   font-size: 16px;
   color: gray;
+  margin: 0;
+  padding-top: 20px;
+  line-height: 24px;
+}
+
+.FAQ-paragraph-container {
+  transition: all 0.2s;
+  height: 0;
+  overflow: hidden;
 }
 
 .Container {
   position: absolute;
   top: 50%;
-  left: 43%;
-  margin: -200px 0 0 -200px;
+  left: 39%;
+  margin: -230px 0 0 -200px;
   max-width: 700px;
+  width: full;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -32,10 +44,12 @@ p {
     0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
     0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
+
 .FAQ-textBox {
   padding: 40px;
   padding-top: 0px;
 }
+
 .FAQ-tags {
   display: flex;
   align-items: center;
@@ -44,16 +58,53 @@ p {
   padding-left: 33px;
   gap: 10px;
 }
+
 .FAQ-txt {
   padding: 20px 0px 20px 0px;
   border-bottom: 2px solid rgb(232, 232, 232);
 }
+
+.FAQ-txt:last-child {
+  border-bottom: none;
+}
+
 .FAQ-minplus {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 70px;
 }
+
 .button {
+  transition: all 0.2s;
   cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.button:active {
+  transform: scale(0.9);
+}
+
+.button > svg {
+  transition: all 0.2s;
+  fill: #ad28eb;
+}
+
+.show-paragraph {
+  height: 120px;
+}
+
+.active-button-svg {
+  transform: rotate(45deg) !important;
+  fill: rgb(0, 0, 0) !important;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  /* url("../assets/fonts/static/WorkSans-SemiBold.ttf") format("truetype"),
+    url("../assets/fonts/static/WorkSans-Bold.ttf") format("truetype"); */
 }

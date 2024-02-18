@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/reset.css">
 
-  <title>Frontend Mentor | FAQ accordion</title>
+  <title>FAQ accordion</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -41,84 +41,82 @@
     <div class="FAQ-textBox">
       <div class="FAQ-txt" id="txt-1">
         <div class="FAQ-minplus">
-          <h1> What is Frontend Mentor, and how will it help me?</h1>
+          <div class="txt-item"> What is Frontend Mentor, and how will it help me?</div>
 
-
-          <div class="button"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none"
-              viewBox="0 0 30 31">
-              <path fill="#301534"
-                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
-            </svg></div>
+          <button class="button" onclick="collapse('txt-1')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+              <path
+                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+            </svg>
+          </button>
         </div>
 
-        <p> Frontend Mentor offers realistic coding challenges to help developers improve their
-          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
-          all levels and ideal for portfolio building.</p>
+        <div class="FAQ-paragraph-container">
+          <p> Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+            all levels and ideal for portfolio building.</p>
+        </div>
       </div>
       <div class="FAQ-txt" id="txt-2">
         <div class="FAQ-minplus">
-          <h1>Is Frontend Mentor free?</h1>
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-              <path fill="#301534"
-                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
-            </svg></div>
+          <div class="txt-item">Is Frontend Mentor free?</div>
+
+          <button class="button" onclick="collapse('txt-2')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+              <path
+                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+            </svg>
+          </button>
         </div>
 
-        <p> Yes, Frontend Mentor offers both free and premium coding challenges, with the free
-          option providing access to a range of projects suitable for all skill levels.</p>
+        <div class="FAQ-paragraph-container">
+          <p> Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels.</p>
+        </div>
       </div>
       <div class="FAQ-txt" id="txt-3">
         <div class="FAQ-minplus">
-          <h1> Can I use Frontend Mentor projects in my portfolio?</h1>
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-              <path fill="#301534"
-                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
-            </svg></div>
+          <div class="txt-item"> Can I use Frontend Mentor projects in my portfolio?</div>
+
+          <button class="button" onclick="collapse('txt-3')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+              <path
+                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+            </svg>
+          </button>
         </div>
 
-        <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-          way to showcase your skills to potential employers!</p>
+        <div class="FAQ-paragraph-container">
+          <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+            way to showcase your skills to potential employers!</p>
+        </div>
       </div>
-      <div class="FAQ-txt" style="border-bottom:0 ;" id="txt-4">
+      <div class="FAQ-txt" id="txt-4">
         <div class="FAQ-minplus">
-          <h1>How can I get help if I'm stuck on a Frontend Mentor challenge?</h1>
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
-              <path fill="#301534"
-                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.2 12.2 0 0 0 15 3.312Zm4.688 13.124h-9.375a.938.938 0 0 1 0-1.875h9.374a.938.938 0 0 1 0 1.876Z" />
-            </svg></div>
+          <div class="txt-item"> How can I get help if I'm stuck on a Frontend Mentor challenge?</div>
+
+          <button class="button" onclick="collapse('txt-4')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" fill="none" viewBox="0 0 30 31">
+              <path
+                d="M15 3.313A12.187 12.187 0 1 0 27.188 15.5 12.203 12.203 0 0 0 15 3.312Zm4.688 13.124h-3.75v3.75a.938.938 0 0 1-1.876 0v-3.75h-3.75a.938.938 0 0 1 0-1.875h3.75v-3.75a.938.938 0 0 1 1.876 0v3.75h3.75a.938.938 0 0 1 0 1.876Z" />
+            </svg>
+          </button>
         </div>
 
-        <p> The best place to get help is inside Frontend Mentor's Discord community. There's a help
-          channel where you can ask questions and seek support from other community members.</p>
+        <div class="FAQ-paragraph-container">
+          <p> The best (and quickest) way to get help on a challenge is in our Discord server. There are thousands of
+            other developers in there, so it's a great place to ask questions. We even have a dedicated "help" channel!
+            If you haven't joined yet, you can get an invite to our Discord server here.</p>
+        </div>
       </div>
-
     </div>
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/Makarem-dev" target="_blank">Makarem-dev</a>.
   </div>
 </body>
+
+<script src="./script.js"></script>
 
 </html>
