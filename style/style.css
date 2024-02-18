@@ -1,0 +1,60 @@
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+p{
+    font-size: 16px;
+    color: gray;
+}
+
+.Container {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  margin: -200px 0 0 -200px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0),
+    0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01),
+    0px 20px 13px 0px rgba(0, 0, 0, 0.01),
+    0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01),
+    0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
+    0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.FAQ-textBox{
+    padding: 40px;
+    padding-top: 0px;
+    
+}
+.FAQ-tags {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px;
+  padding-left: 33px;
+  gap: 10px;
+  
+}
+.FAQ-txt {
+  
+  padding: 20px 0px 20px 0px;
+  border-bottom: 2px solid rgb(232, 232, 232);
+
+ 
+}
+.FAQ-minplus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
